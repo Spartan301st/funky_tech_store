@@ -1,14 +1,24 @@
-import "./categories.styles.scss";
-import Categories from "./components/categories/categories.component";
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/routes/home/home.component";
+import Navigation from "./components/routes/nav/nav.component";
+import SignIn from "./components/routes/sign-in/sign-in.component";
+
+const Shop = () => {
+  return <h1>Shop page</h1>;
+};
+
 const App = () => {
-  const categories = [
-    { title: "Mobile Phones", imgUrl: "/proj_imgs/phones.jpg" },
-    { title: "Laptops", imgUrl: "/proj_imgs/laptops.jpg" },
-    { title: "Desktops", imgUrl: "/proj_imgs/desktops.jpg" },
-    { title: "Mouses", imgUrl: "/proj_imgs/mouses.jpg" },
-    { title: "Headphones", imgUrl: "/proj_imgs/headphones.jpg" },
-  ];
-  return <Categories categories={categories} />;
+  return (
+    <Routes>
+      {/* <Route path="/" element={<Home />} /> */}
+      <Route path="/" element={<Navigation />}>
+        {/* <Route path="home" element={<Home />} /> */}
+        <Route index element={<Home />} />
+        <Route path="shop" element={<Shop />} />
+        <Route path="sign-in" element={<SignIn />} />
+      </Route>
+    </Routes>
+  );
 };
 
 export default App;
