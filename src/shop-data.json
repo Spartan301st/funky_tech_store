@@ -1,0 +1,107 @@
+[
+    {
+        "id": 0,
+        "category": "smartphones",
+        "name": "Xiaomi 12 Pro 5G",
+        "imageUrl": "https://m.media-amazon.com/images/I/71vNgTH3MzL._SL1500_.jpg",
+        "price": 520.5
+    },
+    {
+        "id": 1,
+        "category": "smartphones",
+        "name": "Apple iPhone 13 Pro Max",
+        "imageUrl": "https://m.media-amazon.com/images/I/61yI4lS6sRL._AC_SL1500_.jpg",
+        "price": 999
+    },
+    {
+        "id": 2,
+        "category": "smartphones",
+        "name": "Samsung Galaxy S22 Ultra 5G",
+        "imageUrl": "https://m.media-amazon.com/images/I/81TfEXWPcIL._AC_SL1500_.jpg",
+        "price": 1199.99
+    },
+    {
+        "id": 3,
+        "category": "smartphones",
+        "name": "Google Pixel 6 Pro",
+        "imageUrl": "https://m.media-amazon.com/images/I/51ZhJCe+KDL._AC_SL1500_.jpg",
+        "price": 649
+    },
+    {
+        "id": 4,
+        "category": "smartphones",
+        "name": "OnePlus 10 Pro 5G",
+        "imageUrl": "https://m.media-amazon.com/images/I/81fkbOe-u-L._AC_SL1500_.jpg",
+        "price": 749
+    },
+    {
+        "id": 5,
+        "category": "laptops",
+        "name": "MSI Notebook Raider GE76",
+        "imageUrl": "https://m.media-amazon.com/images/I/71GMf+9eczL._AC_SL1500_.jpg",
+        "price": 2819.70
+    },
+    {
+        "id": 6,
+        "category": "laptops",
+        "name": "Razer Blade 17",
+        "imageUrl": "https://m.media-amazon.com/images/I/71C-b1HuEwL._AC_SL1500_.jpg",
+        "price": 3999
+    },
+    {
+        "id": 7,
+        "category": "laptops",
+        "name": "Alienware x17 R2",
+        "imageUrl": "https://m.media-amazon.com/images/I/71ZvDwBlK4L._AC_SL1500_.jpg",
+        "price": 3549.99
+    },
+    {
+        "id": 8,
+        "category": "laptops",
+        "name": "Lenovo Legion 5",
+        "imageUrl": "https://m.media-amazon.com/images/I/6137MCsiipL._AC_SL1500_.jpg",
+        "price": 1859.99
+    },
+    {
+        "id": 9,
+        "category": "laptops",
+        "name": "ASUS ROG Strix Scar 17 SE",
+        "imageUrl": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/81yU8xy3JjL._AC_SL1500_.jpg",
+        "price": 3999.9
+    },
+    {
+        "id": 10,
+        "category": "mouses",
+        "name": "Razer Basilisk V3",
+        "imageUrl": "https://m.media-amazon.com/images/I/61AcT0ZuO3L._AC_SL1500_.jpg",
+        "price": 64.99
+    },
+    {
+        "id": 11,
+        "category": "mouses",
+        "name": "Razer Viper",
+        "imageUrl": "https://m.media-amazon.com/images/I/61M7B24YNEL._AC_SL1500_.jpg",
+        "price": 84.49
+    },
+    {
+        "id": 12,
+        "category": "mouses",
+        "name": "Glorious Model O",
+        "imageUrl": "https://m.media-amazon.com/images/I/71SmrOjHDFL._AC_SL1500_.jpg",
+        "price": 62.89
+    },
+    {
+        "id": 13,
+        "category": "mouses",
+        "name": "Corsair Dark Core RGB SE",
+        "imageUrl": "https://m.media-amazon.com/images/I/71ULFZUw+XL._AC_SL1500_.jpg",
+        "price": 71.99
+    },
+    {
+        "id": 14,
+        "category": "mouses",
+        "name": "SteelSeries Aerox 3 Wireless",
+        "imageUrl": "https://m.media-amazon.com/images/I/71NOlEP+QWL._AC_SL1500_.jpg",
+        "price": 99.99
+    }
+]
