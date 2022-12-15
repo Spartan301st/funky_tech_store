@@ -4,12 +4,12 @@ import { useContext } from "react";
 import { CartDropdownContext } from "../contexts/cart-dropdown.context";
 
 const CartIcon = () => {
-    const { dropdownVisibilityStatus, setDropdownVisibilityStatus} = useContext(CartDropdownContext);
+    const { dropdownVisibilityStatus, setDropdownVisibilityStatus, totalNumberOfItems} = useContext(CartDropdownContext);
     const toggleDDropdownVisibility = () => setDropdownVisibilityStatus(!dropdownVisibilityStatus)
     return(
         <div className="cart-icon-container" onClick={toggleDDropdownVisibility}>
             <ShoppingBagIcon className="shopping-icon"/>
-            <span className="item-count">0</span>
+            <span className="item-count">{totalNumberOfItems}</span>
         </div>
     )
 }
