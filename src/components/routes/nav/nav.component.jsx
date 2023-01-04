@@ -2,18 +2,18 @@ import {useContext} from 'react'
 import { Outlet, Link } from "react-router-dom";
 
 import {ReactComponent as FunkyLogo} from "../../../assets/logo5.svg"
-import { UserContext } from '../../contexts/user.context';
+import { UserContext } from '../../../contexts/user.context';
 
 import { signOutUser } from '../../../utils/firebase/firebase.utils';
 
 import "./nav.styles.scss"
 import CartIcon from '../../cart-icon/cart-icon.component';
 import CartDropdown from '../../cart-dropdown/cart-dropdown.component';
-import { CartDropdownContext } from '../../contexts/cart-dropdown.context';
+import { CartContext } from '../../../contexts/cart.context';
 const Navigation = () => {
   // const {currentUser, setCurrentUser} = useContext(UserContext);
   const {currentUser} = useContext(UserContext);
-  const {dropdownVisibilityStatus} = useContext(CartDropdownContext);
+  const {dropdownVisibilityStatus} = useContext(CartContext);
   
   // const signOutHandler = async () => {
   //   // signing out the user and settign it to a null in context

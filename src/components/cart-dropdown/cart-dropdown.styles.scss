@@ -4,27 +4,45 @@
     height: 340px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
     border: 1px solid black;
     background-color: white;
     top: 90px;
     right: 40px;
     z-index: 5;
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    overflow-y: scroll;
   
     .empty-message {
       font-size: 18px;
       margin: 50px auto;
     }
-  
+
     .cart-items {
-      height: 240px;
+      padding: 20px 20px 0;
+      height: auto;
       display: flex;
       flex-direction: column;
-      overflow: scroll;
+      gap: 20px;
     }
   
     button {
+      font-size: 0.7rem;
+    }
+    .cart-dropdown-btn-container {
       margin-top: auto;
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.7);
+      box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content:center;
+      align-items:center;
+      z-index: 10;
     }
   }
   
