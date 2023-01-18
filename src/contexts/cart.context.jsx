@@ -8,7 +8,6 @@ const addCartItem = (cartItems, productToAdd) => {
     const newArrayOfCartItems = [...cartItems]
     // find if cartItems contains productToAdd
     const cartItemIndex = newArrayOfCartItems.findIndex((item) => item.id === productToAdd.id);
-    console.log("item: ", productToAdd);
     // if yes then increment productToAdd's quantity
     cartItemIndex >= 0
         ? newArrayOfCartItems[cartItemIndex].quantity++ 
