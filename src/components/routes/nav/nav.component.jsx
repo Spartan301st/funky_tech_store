@@ -1,20 +1,25 @@
-import {useContext} from 'react'
+// import {useContext} from 'react'
 import { Outlet } from "react-router-dom";
 
 import {ReactComponent as FunkyLogo} from "../../../assets/logo5.svg"
-import { UserContext } from '../../../contexts/user.context';
 
 import { signOutUser } from '../../../utils/firebase/firebase.utils';
 
 import CartIcon from '../../cart-icon/cart-icon.component';
 import CartDropdown from '../../cart-dropdown/cart-dropdown.component';
-import { CartContext } from '../../../contexts/cart.context';
+// import { CartContext } from '../../../contexts/cart.context';
 
 // using styled components
 import {NavigationContainer, LogoContainer, NavLinks, NavLink} from "./nav.styles"
+import { useSelector } from 'react-redux';
+import { selectCurrentUser } from '../../../store/user/user.selector';
+import { selectIsDropdownVisible } from "../../../store/cart/cart.selector";
+
 const Navigation = () => {
-  const {currentUser} = useContext(UserContext);
-  const {dropdownVisibilityStatus} = useContext(CartContext);
+  // const {currentUser} = useContext(UserContext);
+  const currentUser = useSelector(selectCurrentUser)
+  // const {dropdownVisibilityStatus} = useContext(CartContext);
+  const isDropdownVisible = useSelector(selectIsDropdownVisible);
 
     return (
       <>
@@ -32,7 +37,7 @@ const Navigation = () => {
             }
             <CartIcon/>
           </NavLinks> 
-          {dropdownVisibilityStatus && <CartDropdown/> }
+          {isDropdownVisible && <CartDropdown/> }
         </NavigationContainer>
         <Outlet />
       </>
